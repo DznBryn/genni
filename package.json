@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "server": "node server.js"
+    "server": "node server.js",
+    "heroku-postbuild": "npm install --legacy-peer-deps"
   },
   "type": "module",
   "author": "Debybe & co",
@@ -27,6 +28,6 @@
     "nodemon": "^3.0.3"
   },
   "engines": {
-    "node": "16.x"
+    "node": ">=16.13"
   }
 }
